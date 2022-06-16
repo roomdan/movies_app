@@ -16,8 +16,10 @@ export interface params {
   i?:string
 }
 
+const url = "http://www.omdbapi.com/?i=tt3896198&apikey=6a7b36f3";
+
 export abstract class Http_client {
-  private api:string | any = process.env.REACT_APP_API_URL;
+  private api:string | any = process.env.REACT_APP_API_URL || url;
   private api_conecction: string | any;
   schema:string;
 
