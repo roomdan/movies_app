@@ -17,7 +17,7 @@ export interface params {
 }
 
 export abstract class Http_client {
-  private api:string | any = "http://www.omdbapi.com/?i=tt3896198&apikey=6a7b36f3" || process.env.REACT_APP_API_URL;
+  private api:string | any = "http://www.omdbapi.com/?i=tt3896198&apikey=6a7b36f3";
   private api_conecction: string | any;
   schema:string;
 
