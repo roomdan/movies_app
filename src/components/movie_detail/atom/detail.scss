@@ -1,0 +1,105 @@
+.page {
+    background: linear-gradient(#FFBE40, #ffffff);
+}
+
+.width {
+    width: 100% !important;
+}
+
+.detail-movies {
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+
+    .movie {
+        width: 25%;
+    }
+
+    .description {
+        width: 75%;
+        padding-left: 2rem;
+        padding-top: 2rem;
+        .title {
+            text-transform: capitalize;
+            color: black;
+            font-size: 2.25rem;
+        }
+        .phg {
+            color: black;
+            font-size: 1.3rem;
+        }
+    }
+}
+
+.actions {
+    width: 100%;
+    padding-right: 4rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    button {
+        background: #4D6666;
+        color: white;
+        padding: .5rem;
+        border: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+}
+
+@media only screen and(max-width:768px) { 
+
+    .detail-movies {
+        width: 90%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+        .movie {
+            width: 50%;
+        }
+    
+        .description {
+            width: 75%;
+            padding-left: 2rem;
+            padding-top: 2rem;
+            .title {
+                text-transform: capitalize;
+                color: black;
+                font-size: 2.25rem;
+            }
+            .phg {
+                color: black;
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    .actions {
+        width: 100%;
+        padding-right: 0rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        button {
+            background: #4D6666;
+            color: white;
+            padding: .5rem;
+            border: none;
+            outline: none;
+            display: flex;
+            align-items: center;
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+    }
+}

@@ -1,0 +1,163 @@
+@import "../../../../sass/__variables__.scss";
+
+$w_trak: auto;
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  .track {
+    width: $w_trak;
+    height: 595px;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .item {
+      width: 100%;
+      height: 100%;
+      background-color: $app_main;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      .item__bg {
+        height: 100%;
+        height: 100%;
+        background-color: #00000077;
+        @include center_all();
+
+        .item__title {
+          width: 75%;
+          span {
+            width: fit-content;
+            color: white;
+            font-size: 2.5rem;
+            user-select: text;
+            font-weight: bold;
+
+            &::selection {
+              background: rgb(255, 255, 255);
+              color: rgb(0, 0, 0);
+            }
+          }
+        }
+      }
+    }
+  }
+  .btn-list {
+    position: absolute;
+    right: 4rem;
+    bottom: 2.5rem;
+
+    .btn-active {
+      border-radius: 100%;
+      outline: none;
+      padding: 5px;
+      background: transparent;
+      border: $app_main 3px solid;
+
+      & div {
+        padding: 5px;
+        background: $app_main;
+        border-radius: 100%;
+      }
+    }
+
+    .btn {
+      border-radius: 100%;
+      outline: none;
+      background: transparent;
+      border: transparent 3px solid;
+
+      & div {
+        padding: 7px;
+        background: white;
+        border-radius: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and(max-width:768px) {
+  .slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    .track {
+      width: $w_trak;
+      height: 400px;
+      background-color: $white;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+
+      .item {
+        width: 100%;
+        height: 100%;
+        background-color: $app_main;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .item__bg {
+          height: 100%;
+          height: 100%;
+          background-color: #00000077;
+          @include center_all();
+
+          .item__title {
+            width: 75%;
+            span {
+              width: fit-content;
+              color: white;
+              font-size: 1.5rem;
+              user-select: text;
+              font-weight: bold;
+
+              &::selection {
+                background: rgb(255, 255, 255);
+                color: rgb(0, 0, 0);
+              }
+            }
+          }
+        }
+      }
+    }
+    .btn-list {
+      position: absolute;
+      right: 4rem;
+      bottom: 2.5rem;
+
+      .btn-active {
+        border-radius: 100%;
+        outline: none;
+        padding: 5px;
+        background: transparent;
+        border: $app_main 3px solid;
+
+        & div {
+          padding: 5px;
+          background: $app_main;
+          border-radius: 100%;
+        }
+      }
+
+      .btn {
+        border-radius: 100%;
+        outline: none;
+        background: transparent;
+        border: transparent 3px solid;
+
+        & div {
+          padding: 7px;
+          background: white;
+          border-radius: 100%;
+        }
+      }
+    }
+  }
+}

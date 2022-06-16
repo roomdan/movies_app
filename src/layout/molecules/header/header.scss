@@ -1,0 +1,16 @@
+.d-btn {
+  display: flex !important;
+}
+
+.hmg-menu {
+    display: none !important;
+}
+
+@media only screen and(max-width:768px) {
+  .d-btn {
+    display: none !important;
+  }
+  .hmg-menu {
+    display: flex !important;
+}
+}

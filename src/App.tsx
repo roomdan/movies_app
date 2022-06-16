@@ -1,20 +1,19 @@
-import React from "react";
-import Api from "./util/api/api";
+import { Route, Routes } from "react-router-dom";
+import HomeView from "./components/home/atoms/home.view";
+import Layout from "./layout/atoms/layout";
+import MovieDetali from "./components/movie_detail/atom/detail";
+import FavoritesView from "./components/favorites/atoms/favorite";
 
 function App() {
-
-  const data = new Api('');
-  const datass = async ()=>{
-    const result = await data.GET({s:'ovni'});
-    console.log(result);
-    
-  }
-
   return (
-    <div>
-      hola mundo
-      <button onClick={datass}>ver resultado</button>
-    </div>
+    <Layout>
+      <Routes>
+        <Route path="*" element={<HomeView />}></Route>
+        <Route path="/" element={<HomeView />}></Route>
+        <Route path="/movie/:title" element={<MovieDetali />}></Route>
+        <Route path="/favorites" element={<FavoritesView />}></Route>
+      </Routes>
+    </Layout>
   );
 }
 

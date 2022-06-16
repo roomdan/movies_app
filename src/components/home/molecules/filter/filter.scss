@@ -1,0 +1,29 @@
+@import "../../../../sass/_variables__";
+
+.filter-content {
+  height: fit-content;
+  min-width: 100%;
+  max-width: max-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .w-auto {
+    width: 20%;
+  }
+}
+
+@media only screen and(max-width:768px) {
+  .filter-content {
+    height: 1rem;
+    min-width: 100%;
+    max-width: max-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .w-auto {
+      width: 50%;
+    }
+  }
+}

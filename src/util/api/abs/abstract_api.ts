@@ -1,17 +1,19 @@
 import axios from "axios";
 
 export interface response {
-  data: any;
-  status: number;
-  errors?: any;
-  details?: any;
+  data: any,
+  status: number,
+  errors?: any,
+  details?: any,
 }
 
 export interface params {
   t?:string,
   type?:'movie' | 'series' | 'episode',
   y?:number,
-  s?:string
+  s?:string,
+  page?:number
+  i?:string
 }
 
 export abstract class Http_client {

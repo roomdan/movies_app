@@ -1,0 +1,9 @@
+$app_main:#FFBE40;
+$app_secondary: #0B0A0A;
+$white:white;
+
+@mixin center_all(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
