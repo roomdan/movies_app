@@ -40,7 +40,7 @@ export function Slider(params: any) {
       maxWidth="xl"
     >
       <div className="slider">
-        <div className="track" style={{ translate: translate + "%" }}>
+        <div className="track" style={{ transform:`translateX(${ translate + "%" })`  }}>
           {sliders.map((slider) => {
             return (
               <div
